@@ -4,100 +4,125 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>إنتل: الاستدامة عبر العصور</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Header / Hero Section -->
-  <header class="hero">
-    <div class="hero-content">
-      <img src="img/intel-header-logo.svg" alt="شعار إنتل" class="logo" />
+<header class="hero text-center">
+  <div class="hero-content container">
+    <img src="img/intel-header-logo.svg" alt="شعار إنتل" class="logo" />
+    <h1>الاستدامة عبر العصور</h1>
+    <p>
+      استكشف رحلة إنتل عبر الزمن واكتشف كيف ساهم الابتكار في بناء مستقبل أكثر استدامة.
+    </p>
+    <button class="btn btn-light mt-3" data-bs-toggle="modal" data-bs-target="#learnMoreModal">
+      اعرف المزيد
+    </button>
+  </div>
+</header>
 
-      <h1>الاستدامة عبر العصور</h1>
+<section class="timeline">
 
-      <p>
-        استكشف رحلة إنتل عبر الزمن، واكتشف كيف ساهم التزامنا بالابتكار 
-        في تشكيل مستقبل أكثر استدامة للتكنولوجيا وكوكبنا.
-      </p>
+  <div class="card">
+    <h2>1968</h2>
+    <h3>تأسيس إنتل</h3>
+    <img src="img/1968.jpg" alt="تأسيس إنتل">
+    <p class="details">
+      تأسست شركة إنتل لتبدأ مسيرة الابتكار في عالم التكنولوجيا.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>1971</h2>
+    <h3>أول معالج دقيق</h3>
+    <img src="img/1971.jpeg" alt="المعالج 4004">
+    <p class="details">
+      إطلاق أول معالج دقيق تجاري في العالم.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>2022</h2>
+    <h3>صافي انبعاثات صفرية</h3>
+    <img src="img/2022.jpeg" alt="صافي صفر">
+    <p class="details">
+      التزام بتحقيق صافي انبعاثات صفرية بحلول 2040.
+    </p>
+  </div>
+
+</section>
+
+<section class="container my-5">
+  <div class="row text-center">
+    <div class="col-md-4 mb-4">
+      <div class="p-4 shadow-sm bg-white rounded">
+        <h4>الطاقة المتجددة</h4>
+        <p>الاستثمار في مصادر طاقة نظيفة حول العالم.</p>
+        <a href="#" class="btn btn-outline-primary">اعرف المزيد</a>
+      </div>
     </div>
-  </header>
-
-  <!-- Timeline Cards Section -->
-  <section class="timeline">
-
-    <div class="card">
-      <h2>1968</h2>
-      <h3>تأسيس شركة إنتل</h3>
-      <img src="img/1968.jpg" alt="تأسيس إنتل">
-      <p class="details">
-        قام روبرت نويس وجوردون مور بإعادة تسمية الشركة الجديدة 
-        من NM Electronics إلى شركة إنتل، مما وضع الأساس لعقود من الابتكار التكنولوجي.
-      </p>
+    <div class="col-md-4 mb-4">
+      <div class="p-4 shadow-sm bg-white rounded">
+        <h4>الابتكار</h4>
+        <p>تطوير تقنيات تقلل استهلاك الطاقة.</p>
+        <a href="#" class="btn btn-outline-primary">اعرف المزيد</a>
+      </div>
     </div>
-
-    <div class="card">
-      <h2>1971</h2>
-      <h3>أول معالج دقيق</h3>
-      <img src="img/1971.jpeg" alt="المعالج الدقيق 4004">
-      <p class="details">
-        أطلقت إنتل المعالج 4004، أول معالج دقيق تجاري في العالم، 
-        مما أشعل ثورة المعالجات ومهّد الطريق لمستقبل أجهزة الحوسبة.
-      </p>
+    <div class="col-md-4 mb-4">
+      <div class="p-4 shadow-sm bg-white rounded">
+        <h4>المجتمع</h4>
+        <p>برامج لدعم المجتمعات عالميًا.</p>
+        <a href="#" class="btn btn-outline-primary">اعرف المزيد</a>
+      </div>
     </div>
+  </div>
+</section>
 
-    <div class="card">
-      <h2>1978</h2>
-      <h3>معالج 8086</h3>
-      <img src="img/1978.jpeg" alt="معالج 8086">
-      <p class="details">
-        إطلاق معالج 8086 الذي أسس معمارية x86 
-        التي تدعم عددًا لا يُحصى من أجهزة الكمبيوتر والخوادم الحديثة.
-      </p>
+<section class="container my-5">
+  <h3 class="text-center mb-4">اشترك في نشرتنا للاستدامة</h3>
+  <form class="row g-3 justify-content-center">
+    <div class="col-md-6">
+      <label for="email" class="form-label">البريد الإلكتروني</label>
+      <input type="email" class="form-control" id="email" required>
     </div>
-
-    <div class="card">
-      <h2>1985</h2>
-      <h3>معالج 386</h3>
-      <img src="img/1985.jpg" alt="معالج 386">
-      <p class="details">
-        قدمت إنتل معالج 386 بمعمارية 32 بت، 
-        مما أدخل عصرًا جديدًا من الأداء وتعدد المهام لأجهزة الكمبيوتر الشخصية.
-      </p>
+    <div class="col-12 text-center">
+      <button type="submit" class="btn btn-primary">اشتراك</button>
     </div>
+  </form>
+</section>
 
-    <div class="card">
-      <h2>2006</h2>
-      <h3>ذروة انبعاثات الغازات الدفيئة</h3>
-      <img src="img/2006.jpeg" alt="مصنع واستدامة">
-      <p class="details">
-        شهد هذا العام أعلى مستوى لانبعاثات الغازات الدفيئة في عمليات إنتل. 
-        بعد ذلك، استثمرت الشركة بشكل كبير في الطاقة المتجددة وكفاءة التصنيع 
-        لعكس هذا الاتجاه.
-      </p>
+<footer class="text-center py-4 bg-light">
+  <p>© 2026 Intel | سياسة الخصوصية | الشروط | اتصل بنا</p>
+</footer>
+
+<div class="modal fade" id="learnMoreModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <h5 class="modal-title">معلومات إضافية</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        تعرف على جهود إنتل في الاستدامة والابتكار العالمي.
+      </div>
     </div>
+  </div>
+</div>
 
-    <div class="card">
-      <h2>2020</h2>
-      <h3>استراتيجية RISE</h3>
-      <img src="img/2020.jpg" alt="استراتيجية RISE">
-      <p class="details">
-        أطلقت إنتل استراتيجية RISE وأهداف 2030 لدفع التقدم في العمل المناخي 
-        وإدارة المياه وتقليل النفايات.
-      </p>
-    </div>
+<script>
+function updateDirection() {
+  const lang = document.documentElement.lang;
+  if (lang === "ar" || lang === "he" || lang === "fa" || lang === "ur") {
+    document.documentElement.setAttribute("dir", "rtl");
+  } else {
+    document.documentElement.setAttribute("dir", "ltr");
+  }
+}
+new MutationObserver(updateDirection).observe(document.documentElement, { attributes: true });
+updateDirection();
+</script>
 
-    <div class="card">
-      <h2>2022</h2>
-      <h3>صافي انبعاثات صفرية بحلول 2040</h3>
-      <img src="img/2022.jpeg" alt="صافي صفر">
-      <p class="details">
-        أعلنت إنتل التزامها بتحقيق صافي انبعاثات غازات دفيئة صفرية بحلول عام 2040.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>2023</h2>
-      <h3>كهرباء متجددة</h3>
-      <img src="img/2023.jpg" alt="طاقة متجددة">
-      <p class="details">
-        حققت الشركة استخدامًا بنسبة 9
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
