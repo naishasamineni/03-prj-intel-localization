@@ -7,13 +7,19 @@
 
 body {
   background-color: #f4f4f4;
+  direction: rtl;
+  text-align: right;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, span, a, label, button, li, div {
+  direction: rtl;
+  text-align: right;
 }
 
 .hero {
   background: linear-gradient(to right, #0071c5, #003c71);
   color: white;
   padding: 60px 20px;
-  text-align: center;
 }
 
 .logo {
@@ -26,10 +32,7 @@ body {
   gap: 20px;
   padding: 40px;
   overflow-x: auto;
-}
-
-html[dir="rtl"] .timeline {
-  flex-direction: row-reverse;
+  scroll-behavior: smooth;
 }
 
 .card {
@@ -39,6 +42,7 @@ html[dir="rtl"] .timeline {
   padding: 15px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
+  flex-shrink: 0;
 }
 
 .card img {
